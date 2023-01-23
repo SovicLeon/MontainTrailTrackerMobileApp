@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mountain Trails Tracker</string>
+    <string name="hello_blank_fragment">Prazen fragment</string>
+    <string name="appDescription">Aplikacija za sledenje planinskih poti.</string>
+    <string name="appVersion">Verzija aplikacije: %s</string>
+    <string name="appAuthor">Avtor aplikacije: %s</string>
+    <string name="aboutButton">Več</string>
+    <string name="settingsButton">Nastavitve</string>
+    <string name="myTrailsButton">Moje Poti</string>
+    <string name="exitButton">Izhod</string>
+    <string name="addButton">Dodaj</string>
+    <string name="distanceView">Razdalja</string>
+    <string name="altitudeView">Višina</string>
+    <string name="startView">Začetna točka</string>
+    <string name="endView">Končna točka</string>
+    <string name="measuresView">Nastavi mere</string>
+    <string name="metric">metrično</string>
+    <string name="imperial">imperijalno</string>
+    <string name="addTrailFragment">Dodaj pot</string>
+    <string name="addPoint">Dodaj točko</string>
+    <string name="cancelPoint">Odstrani točko</string>
+    <string name="trailTitle">Naslov poti</string>
+    <string name="hikeTitle">Naslov pohoda</string>
+    <string name="description">Opis</string>
+    <string name="selectTrail">Izberi pot</string>
+    <string name="trail">Pot</string>
+    <string name="selectDate">Izberi datum</string>
+</resources>

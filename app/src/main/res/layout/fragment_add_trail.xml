@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrailFragment">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        tilesource="Mapnik"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></org.osmdroid.views.MapView>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normalMargin"
+        android:text="@string/addPoint"
+        app:layout_constraintEnd_toStartOf="@+id/endButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altitudeFragmentView" />
+
+    <Button
+        android:id="@+id/endButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelPoint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/startButton" />
+
+    <Button
+        android:id="@+id/addTrailFragmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trailTitleView" />
+
+    <TextView
+        android:id="@+id/distanceFragmentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:text="@string/distanceView"
+        app:layout_constraintEnd_toStartOf="@+id/altitudeFragmentView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/altitudeFragmentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/altitudeView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/distanceFragmentView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/distanceFragmentView" />
+
+    <TextView
+        android:id="@+id/trailTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bigMargin"
+        android:text="@string/trailTitle"
+        app:layout_constraintEnd_toStartOf="@+id/trailTitleEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+    <EditText
+        android:id="@+id/trailTitleEditText"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/trailTitleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/trailTitleView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

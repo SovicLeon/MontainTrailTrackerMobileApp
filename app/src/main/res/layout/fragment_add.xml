@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment" >
+
+    <TextView
+        android:id="@+id/distanceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hikeTitle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editHikeTitle"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/altitudeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editDescription"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/trailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectTrail"
+        app:layout_constraintBaseline_toBaselineOf="@+id/selectTrailButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectDate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/datePickerButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/editHikeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="@dimen/normalMargin"
+        android:width="130dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="@dimen/normalMargin"
+        android:width="130dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editHikeTitle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/addButton"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/datePickerButton" />
+
+    <Button
+        android:id="@+id/datePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="JAN 01 2023"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/selectTrailButton" />
+
+    <Button
+        android:id="@+id/selectTrailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/trail"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

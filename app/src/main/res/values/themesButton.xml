@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyCustomButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:padding">1dp</item>
+    </style>
+</resources>

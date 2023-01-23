@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.leonsovic.mysecondapp.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_recycleViewFragment"
+            app:destination="@id/recycleViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.leonsovic.mysecondapp.InfoFragment"
+        android:label="@string/aboutButton"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.leonsovic.mysecondapp.SettingsFragment"
+        android:label="@string/settingsButton"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/recycleViewFragment"
+        android:name="com.leonsovic.mysecondapp.RecycleViewFragment"
+        android:label="@string/myTrailsButton"
+        tools:layout="@layout/fragment_recycle_view" >
+        <action
+            android:id="@+id/action_recycleViewFragment_to_addTrailFragment"
+            app:destination="@id/addTrailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.leonsovic.mysecondapp.AddFragment"
+        android:label="@string/addButton"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/addTrailFragment"
+        android:name="com.leonsovic.mysecondapp.AddTrailFragment"
+        android:label="@string/addTrailFragment"
+        tools:layout="@layout/fragment_add_trail" />
+</navigation>

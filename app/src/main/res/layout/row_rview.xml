@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvLine"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:id="@+id/llLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/titleOut"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="20dp"
+            android:padding="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/distanceOut"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="20dp"
+            android:text="TextView"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/altitudeOut"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="20dp"
+            android:text="TextView"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

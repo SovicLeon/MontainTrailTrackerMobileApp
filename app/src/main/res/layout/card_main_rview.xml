@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvLine"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hikeNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/imageview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hikeDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hikeAltitudeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBaseline_toBaselineOf="@+id/measureView1"
+            app:layout_constraintStart_toEndOf="@+id/measureView1" />
+
+        <TextView
+            android:id="@+id/hikeDistanceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageview" />
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            tilesource="Mapnik"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"></org.osmdroid.views.MapView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="60dp" />
+
+        <TextView
+            android:id="@+id/measureView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBaseline_toBaselineOf="@+id/hikeDistanceView"
+            app:layout_constraintStart_toEndOf="@+id/hikeDistanceView" />
+
+        <TextView
+            android:id="@+id/measureView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBaseline_toBaselineOf="@+id/hikeAltitudeView"
+            app:layout_constraintStart_toEndOf="@+id/hikeAltitudeView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

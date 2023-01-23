@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mountain Trails Tracker</string>
+    <string name="hello_blank_fragment">Leeres Fragment</string>
+    <string name="appDescription">Eine Anwendung zum Verfolgen von Bergpfaden.</string>
+    <string name="appVersion">App version: %s</string>
+    <string name="appAuthor">App Autor: %s</string>
+    <string name="aboutButton">Mehr</string>
+    <string name="settingsButton">Einstellungen</string>
+    <string name="myTrailsButton">Meine Spuren</string>
+    <string name="exitButton">Verlassen</string>
+    <string name="addButton">Anschrift</string>
+    <string name="distanceView">Distanz</string>
+    <string name="altitudeView">Höhe</string>
+    <string name="startView">Startpunkt</string>
+    <string name="endView">Endpunkt</string>
+    <string name="measuresView">Maßnahmen setzen</string>
+    <string name="metric">metrisch</string>
+    <string name="imperial">imperial</string>
+    <string name="addTrailFragment">Anschrift trail</string>
+    <string name="addPoint">Punkt anschrift</string>
+    <string name="cancelPoint">Punk abschrift</string>
+    <string name="trailTitle">Trail titel</string>
+    <string name="hikeTitle">Hike titel</string>
+    <string name="description">Deteil</string>
+    <string name="selectTrail">Trail anscrift</string>
+    <string name="trail">Trail</string>
+    <string name="selectDate">Datum anschrift</string>
+</resources>

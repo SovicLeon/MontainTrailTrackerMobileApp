@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewMain">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/addButton" />
+
+        <Button
+            android:id="@+id/recycleViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/myTrailsButton" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/settingsButton" />
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/aboutButton" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/exitButton" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
