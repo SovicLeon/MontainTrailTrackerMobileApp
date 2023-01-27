@@ -15,46 +15,54 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="62dp"
-        android:orientation="horizontal"
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/addButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recycleViewButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewMain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/recycleViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/myTrailsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settingsButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewMain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/settingsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aboutButton"
+        app:layout_constraintStart_toEndOf="@+id/recycleViewButton"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewMain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/aboutButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerViewMain">
-
-        <Button
-            android:id="@+id/addButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/addButton" />
-
-        <Button
-            android:id="@+id/recycleViewButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/myTrailsButton" />
-
-        <Button
-            android:id="@+id/settingsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/settingsButton" />
-
-        <Button
-            android:id="@+id/aboutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/aboutButton" />
-
-        <Button
-            android:id="@+id/exitButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/exitButton" />
-    </LinearLayout>
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/settingsButton"
+        app:layout_constraintTop_toTopOf="@+id/settingsButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

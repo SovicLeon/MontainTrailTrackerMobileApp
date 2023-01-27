@@ -124,9 +124,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.aboutButton.setOnClickListener {
             findNavController().navigate(R.id.infoFragment)
         }
-        binding.exitButton.setOnClickListener {
+        /*binding.exitButton.setOnClickListener {
             activity?.finish()
-        }
+        }*/
 
         app.fragmentOpened("mainOpened")
     }
